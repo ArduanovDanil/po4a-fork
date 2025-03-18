@@ -35,6 +35,7 @@ jobs:
       run: |
         perl Build.PL
         COLUMNS=120 ./Build verbose=1
+        ./Build install
 
     - name: Test
       run: ./Build test verbose=1
