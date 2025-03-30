@@ -26,4 +26,3 @@ RUN po4a --version
 WORKDIR /src
 
 ENTRYPOINT [ "po4a" ]
-
