@@ -35,6 +35,14 @@ module for the following formats:
   - xml: generic XML documents (see also docbook).
   - yaml: YAML documents.
 
+# Contributing
+
+po4a is particularly welcoming contributions from the community. If
+you are new to Open Source, we'd love to mentor you for your first
+contributions. Please see the
+[CONTRIBUTING](https://github.com/mquinson/po4a/blob/master/CONTRIBUTING.md)
+file to see how you could help.
+
 # Installation
 
 To install this module type the following:
@@ -45,21 +53,22 @@ To install this module type the following:
    ./Build install
 ```
 
-# Contributing
-
-po4a is particularly welcoming contributions from the community. If
-you are new to Open Source, we'd love to mentor you for your first
-contributions. Please see the
-[CONTRIBUTING](https://github.com/mquinson/po4a/blob/master/CONTRIBUTING.md)
-file to see how you could help.
-
 # Use without installation
+
+## Locally
 
 If you want to use a version without installing it (e.g. directly from
 the git tree), use the PERLLIB environment variable as such:
 
 ```bash
    PERLLIB=~/git-checkouts/po4a/lib ~/git-checkouts/po4a/po4a-gettextize [usual args]
+```
+
+## By Docker
+
+//TODO change link to official image
+```bash
+   docker run -it --rm -v $(pwd):/src arduanovdanil/po4a-fork:v0.73 po4a.cfg
 ```
 
 # Po4a dependencies
